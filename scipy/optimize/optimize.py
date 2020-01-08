@@ -1808,7 +1808,7 @@ def _minimize_scalar_bounded(func, bounds, args=(),
         print(" ")
         print(header)
         print("%5.0f   %12.6g %12.6g %s" % (fmin_data + (step,)))
-
+    fu = numpy.nan
     while (numpy.abs(xf - xm) > (tol2 - 0.5 * (b - a))):
         golden = 1
         # Check for parabolic fit
